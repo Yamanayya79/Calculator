@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="white">
+    <p onclick="darkmode()" class="darklight" style="border: 1px solid red; width:100px;background-color: blueviolet; margin: 50px;">Change mode</p>
+    <div class="container">
+        <h2>Calculator</h2>
+       
+        <div class="calculator">
+            <input type="text"  name="screen" id="screen">
+        <table>
+            <tr>
+                <td><button>(</button></td>
+                <td><button>)</button></td>
+                <td><button>AC</button></td>
+                <td><button>%</button></td>
+            </tr>
+            <tr>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td><button>X</button></td>
+            </tr>
+            <tr>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+                <td><button>-</button></td>
+            </tr>
+            <tr>
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+                <td><button>+</button></td>
+            </tr>
+            <tr>
+                <td><button>0</button></td>
+                <td><button>.</button></td>
+                <td><button>/</button></td>
+                <td><button>=</button></td>
+              
+            </tr>
+            <tr><td><button onclick="back()" class="btn btn-clear">C</button></td></tr>
+        </table>
+    </div>
+    </div>
+    <p id="test"> </p>
+   <script src="./cal.js"></script>
+    <script>
+        const darkmode = () => {
+        let dark = document.body;
+        dark.classList.toggle('darkmode')
+    }
+   
+
+    </script>
+    <!-- <script>
+        function backSpace() {
+            // var bsp = document.getElementById("ns").value;
+            // document.getElementById("ns").value=bsp.substring(0,bsp.length -1);
+            var screen = document.getElementById("C").value;
+        }
+    </script> -->
+    
+
+</body>
+
+</html>
