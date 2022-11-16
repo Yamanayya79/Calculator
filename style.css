@@ -2,7 +2,9 @@
     text-align: center;
     margin-top: 23px;
 }
-
+body{
+background-color:pink;
+}
 table {
     margin: auto;
 }
